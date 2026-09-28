@@ -1,0 +1,14 @@
+{
+  "name": "A2A",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n mcp,server,client -c magenta,cyan,yellow \"npm --prefix ../MCP_Search run dev\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm --prefix server install --legacy-peer-deps && npm --prefix client install --legacy-peer-deps"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
