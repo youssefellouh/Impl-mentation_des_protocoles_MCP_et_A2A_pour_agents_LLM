@@ -1,0 +1,19 @@
+{
+  "name": "MCP_Search",
+  "version": "1.0.0",
+  "description": "Standalone MCP server exposing a web_search tool via SerpAPI",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "stdio": "node stdio.js",
+    "sse": "node sse.js",
+    "ws": "node websocket.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "zod": "^3.23.8"
+  }
+}
